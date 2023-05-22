@@ -1,0 +1,77 @@
+import java.util.*;
+
+public class game {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("WELCOME TO THE GAME OF ROCK, PAPER, SCISSORS");
+
+        System.out.println("------x--------x--------x----------x------");
+
+        System.out.println("ENTER YOUR CHOICE (e.g. rock, paper, or scissors):");
+
+        System.out.println("------x--------x--------x----------x------");
+
+        System.out.print("PLAYER 1 : ");
+
+        String p1 = sc.next();
+
+        System.out.print("PLAYER 2 : ");
+
+        String p2 = sc.next();
+
+        
+
+         System.out.println("------x--------x--------x----------x------");
+
+        if (p1.equals(p2)) {
+
+            System.out.println("IT'S A TIE");
+
+        } else if (p1.equals("rock")) {
+
+            if (p2.equals("scissors")) {
+
+                System.out.println("PLAYER 1 WINS");
+
+            } else {
+
+                System.out.println("PLAYER 2 WINS");
+
+            }
+
+        } else if (p1.equals("paper")) {
+
+            if (p2.equals("rock")) {
+
+                System.out.println("PLAYER 1 WINS");
+
+            } else {
+
+                System.out.println("PLAYER 2 WINS");
+
+            }
+
+        } else if (p1.equals("scissors")) {
+
+            if (p2.equals("paper")) {
+
+                System.out.println("PLAYER 1 WINS");
+
+            } else {
+
+                System.out.println("PLAYER 2 WINS");
+
+            }
+
+        } else {
+
+            System.out.println("INVALID ENTRY");
+
+        }
+
+    }
+
+}
